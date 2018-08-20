@@ -1,0 +1,46 @@
+
+<form class="col-lg-offset-5 col-md-offset-4 col-sm-offset-4 col-xs-offset-1" id="add_burger">
+<div class="input-group col-lg-4 col-md-5 col-sm-6 col-xs-11">
+   <input type="text" class="form-control" placeholder="Build your burger .." id="new-burger-name">
+   <span class="input-group-btn">
+        <button  type="submit" class="btn btn-success" type="button">Go!</button>
+   </span>
+</div>
+</form>
+<div class="col-lg-12 warnings">
+   <div id="special-char-warning" hidden>
+      <p> * No special characters, only simple plain english please. I am not so smart</p>
+   </div>
+   <div id="blank-field-warning" hidden>
+    <p> * Can't leave that field blank my friend, you know it better</p>
+  </div>
+</div>
+
+<hr>
+
+{{!-- Displaying all undevoured ones. controller has sent this --}}
+<div class="col-lg-6 col-md-6 col-sm-6 col-sm-12 un-devoured-panel">
+  <div class="panel panel-body  un-devored-panel-body">
+    {{#each burger}}
+      {{#unless devoured}}
+        <p>{{burger_name}}
+        <button data-id="{{id}}" class="btn btn-success" id="un-devoured-btn"> Consume it </button>
+      {{/unless}}
+      </p>
+    {{/each}}
+  </div>
+</div>
+
+{{!-- Displaying all devoured ones. controller has sent this --}}
+<div class="col-lg-6 col-md-6 col-sm-6 col-sm-12 devoured-panel">
+  <div class="panel panel-body devored-panel-body">
+    {{#each burger}}
+      {{#if devoured}}
+        <p>
+          <button class="btn btn-danger" id="devoured" disabled> Consumed </button>
+          {{burger_name}}
+        </p>
+      {{/if}}
+    {{/each}}
+  </div>
+</div>

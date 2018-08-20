@@ -1,0 +1,62 @@
+
+.h1-heading{
+    margin-top: -5px;
+    font-size: 40px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#title-tag{
+    font-size: 30px;
+    margin-top:-15px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.add-burger{
+    margin-top:120px;
+}
+
+.un-devoured-panel{
+    margin-top: 10px;
+    font-size:20px;
+    font-family: Arial Rounded MT;
+    max-height: 300px;
+    overflow: auto;
+}
+.devoured-panel{
+    margin-top: 20px;
+    font-size:20px;
+    font-family: Arial Rounded MT;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.un-devored-panel-body{
+    text-align: right;
+    margin-right: 40px;
+}
+
+.devoured-panel-body{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.btn-success{
+    font-family: Arial Rounded MT !important;
+    font-size: 15px !important;
+    padding: 6px !important;
+    border: 1px solid black !important;
+}
+.btn-danger{
+    font-family: Arial Rounded MT !important;
+    font-size: 15px !important;
+    padding: 6px !important;
+    border: 1px solid black !important;
+}
+
+.warnings{
+    margin-top:10px;
+    text-align: center;
+    color: red;
+}
